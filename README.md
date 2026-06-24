@@ -5,11 +5,11 @@
 
 `container` is a tool that you can use to create and run Linux containers as lightweight virtual machines on your Mac. It's written in Swift, and optimized for Apple silicon.
 
-The tool consumes and produces [OCI-compatible container images](https://github.com/opencontainers/image-spec), so you can pull and run images from any standard container registry. You can push images that you build to those registries as well, and run the images in any other OCI-compatible application.
+The tool consumes and produces [OCI-compatible container images](https://github.com/opencontainers/image-spec), so you can pull and run images from any standard container registry. You casdan push images that you build to those registries as well, and run the images in any other OCI-compatible application.
 
 `container` uses the [Containerization](https://github.com/apple/containerization) Swift package for low-level container, image, and process management.
 
-![introductory movie showing some basic commands](./docs/assets/landing-movie.gif)
+⁠![introductory movie showing some basic commands](./docs/assets/landing-movie.gif)
 
 ## Get started
 
@@ -27,6 +27,7 @@ To install the tool, double-click the package file and follow the instructions. 
 
 Start the system service with:
 
+
 ```bash
 container system start
 ```
@@ -37,11 +38,13 @@ For both upgrading and downgrading, you can manually download and install the si
 
 If you're upgrading or downgrading, you must stop your existing `container`:
 
+
 ```bash
 container system stop
 ```
 
 To upgrade to the latest release, simply run the command below:
+
 
 ```bash
 /usr/local/bin/update-container.sh
@@ -49,12 +52,14 @@ To upgrade to the latest release, simply run the command below:
 
 To downgrade, you must uninstall your existing `container` (the `-k` flag keeps your user data, while `-d` removes it):
 
+
 ```bash
 /usr/local/bin/uninstall-container.sh -k
 /usr/local/bin/update-container.sh -v 0.3.0
 ```
 
 Start the system service with:
+
 
 ```bash
 container system start
@@ -64,11 +69,13 @@ container system start
 
 Use the `uninstall-container.sh` script (installed to `/usr/local/bin`) to remove `container` from your system. To remove your user data along with the tool, run:
 
+
 ```bash
 /usr/local/bin/uninstall-container.sh -d
 ```
 
 To retain your user data so that it is available should you reinstall later, run:
+
 
 ```bash
 /usr/local/bin/uninstall-container.sh -k
@@ -76,8 +83,8 @@ To retain your user data so that it is available should you reinstall later, run
 
 ## Next steps
 
-- Take [a guided tour of `container`](./docs/tutorials/start-here.md) by building, running, and publishing a simple web server image.
-- Learn how to [use various `container` features](./docs/how-to.md).
+- Take [a guided tour of ](./docs/tutorials/start-here.md)`container` by building, running, and publishing a simple web server image.
+- Learn how to [use various ](./docs/how-to.md)`container`[ features](./docs/how-to.md).
 - Read a brief description and [technical overview](./docs/technical-overview.md) of `container`.
 - Browse the [full command reference](./docs/command-reference.md).
 - [Build and run](./BUILDING.md) `container` on your own development system.
